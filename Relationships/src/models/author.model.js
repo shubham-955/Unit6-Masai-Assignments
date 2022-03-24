@@ -11,12 +11,12 @@ const authorSchema = new Schema({
         type: String,
         required: true,
     },
-    // books: [
-    //     {
-    //         type: mongoose.Schema.Types.ObjectId,
-    //         ref: 'book',
-    //     }
-    // ]
+    books: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'book',
+        }
+    ]
 }, {
     versionKey: false,
     timestamps: true
